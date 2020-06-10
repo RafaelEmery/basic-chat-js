@@ -4,23 +4,30 @@
 
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Rafa Chat</title>
+        <title>Chat do Rafa</title>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script>
 
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="./styles.css">
         
     </head>
     <body>
 
-        <form  id="chat">
-            <input type="text" name="username" placeholder="Digite seu usuário">
+        <main>
             <div class="messages"></div>
-            <input type="text" name="message" placeholder="Digite sua mensagem">
 
-            <button type="submit"> Enviar </button>
-        </form>
+            <form>
+                <label for="username">Quem é você?</label>
+                <input type="text" id="username" name="username">
+
+                <label for="message">O que você tem a dizer?</label>
+                <input type="text" id="message" name="message">
+
+                <button type="submit"> Enviar </button>
+            </form>
+        </main>
 
         <script src="./script.js"></script>
 

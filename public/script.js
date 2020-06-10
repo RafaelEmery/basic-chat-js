@@ -16,7 +16,7 @@ socket.on('receivedMessage', function(message) {
     renderMessage(message);
 });
 
-$('#chat').submit(function(event) {
+$('form').submit(function(event) {
     event.preventDefault();
 
     var author = $('input[name=username]').val();

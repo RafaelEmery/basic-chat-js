@@ -28,9 +28,8 @@ io.on('connection', socket => {
 
     //Pegando o evento do front
     socket.on('sendMessage', data => {
-        console.log(data);
-
         messages.push(data);
+        
         socket.broadcast.emit('receivedMessage', data);
     });
 });
