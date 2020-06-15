@@ -1,7 +1,7 @@
 var socket = io('http://localhost:3000');
 
 function renderMessage(message) {
-    var html = '<div class="message"><strong>' + message.author + '</strong>: ' + message.message + '</div>';
+    var html = '<div class="message"><strong>' + message.author + ': </strong> ' + message.message + '</div>';
     
     $('.messages').append(html);
 }

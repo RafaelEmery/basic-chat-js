@@ -1,8 +1,13 @@
 * {
   margin: 0;
   padding: 0;
+
   font-family: 'Montserrat', sans-serif;
   font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-color: #f0f0f5;
 }
 
 main {
@@ -19,6 +24,21 @@ main .messages {
 
   border: 1px solid #f0f0f5;
   border-radius: 8px;
+
+  background-color: white;
+}
+
+main .messages .message {
+  margin: 12px 12px;
+
+  border-radius: 8px;
+
+  background-color: white;
+}
+
+main .messages .message strong {
+  font-size: 24px;
+  color: blue;
 }
 
 main form {
@@ -28,14 +48,16 @@ main form {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-
-  /* border: 1px solid red; */
 }
 
 main form label {
   margin-bottom: 12px;
 
   font-weight: bold;
+}
+
+main form input {
+  background-color: white;
 }
 
 main form input+label {
