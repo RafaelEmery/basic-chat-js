@@ -18,7 +18,7 @@ The server is configured on *http://localhost:3000*.
 
 The *index.html* is the chat' page. In the left side are the messages and in the right side is the main form. See the example below:
 
-![](/readme-scr/main-screen.png)
+![](/readme-src/main-screen.png)
 
 You can just use with multiple pages and set an user for each one then send your message! Enjoy it.
 
